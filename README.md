@@ -11,7 +11,7 @@ stow folder_name
 ```
 The contents of folder_name are intelligently symlinked in the home directory by stow. Very useful!
 
-## What works where
+## What works, where?
 
 - Systemd configs will only work on linux distros that use systemd (suprise!)
 - Binaries or packages should be installed in whatever manner seems reasonable for the system in use. The following is my current setup:
