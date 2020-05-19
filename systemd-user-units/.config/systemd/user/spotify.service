@@ -1,0 +1,14 @@
+[Unit]
+Description=librespot
+Wants=sound.target
+After=sound.target
+Wants=network-online.target
+After=network-online.target
+
+[Service]
+ExecStart=/home/marcus/.cargo/bin/librespot -n "Librespot" -b 320 -c ./cache --enable-volume-normalisation --initial-volume 75 
+Restart=always
+RestartSec=12
+
+[Install]
+WantedBy=default.target
